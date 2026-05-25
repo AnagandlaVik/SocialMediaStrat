@@ -1,3 +1,10 @@
+**Here is your corrected HTML with both fixes applied:**
+
+### Fixes Made:
+1. Removed `#3` ("Direct Executive Access") from the LinkedIn section and renumbered the remaining items.
+2. Fixed the `+` so it appears **beside** the numbers (not below) for all follower/subscriber stats.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -370,7 +377,7 @@
 
   .stat-row {
     display: flex;
-    gap: 1.2rem;
+    gap: 1rem;
     flex-wrap: wrap;
   }
 
@@ -379,18 +386,15 @@
     flex-direction: column;
   }
 
-  .stat-num-box {
-    display: flex;
-    align-items: baseline;
-    white-space: nowrap;
-  }
-
   .stat-value {
     font-family: 'Orbitron', monospace;
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--text);
     line-height: 1;
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
   }
 
   .stat-label {
@@ -398,7 +402,7 @@
     color: var(--muted);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
   }
 
   .new-badge {
@@ -709,15 +713,6 @@
 
   .nav-links a:hover { color: var(--red); }
 
-  .counter { display: inline-block; }
-
-  .red-line {
-    width: 60px;
-    height: 3px;
-    background: var(--red);
-    margin-bottom: 2rem;
-  }
-
   @media (max-width: 600px) {
     .nav-links { display: none; }
     section { padding: 5rem 1.2rem; }
@@ -740,6 +735,7 @@
   </ul>
 </nav>
 
+<!-- HERO -->
 <div id="hero">
   <div class="hero-grid"></div>
   <div class="team-number">2720</div>
@@ -751,4 +747,382 @@
     <div class="authors">
       <span class="author-chip">Vik</span>
       <span class="author-chip">Erick</span>
-      <span class="author-
+      <span class="author-chip">Afraz</span>
+      <span class="author-chip">Sanchita</span>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- WHY SECTION -->
+<section id="why">
+  <div class="section-label reveal">01 — Foundation</div>
+  <h2 class="section-title reveal">Why Social Media<br>Matters</h2>
+  <p class="section-desc reveal">Three pillars that drive our digital presence and team growth strategy.</p>
+
+  <div class="why-cards">
+    <div class="why-card reveal reveal-delay-1">
+      <span class="why-icon">💰</span>
+      <h3>Attract Sponsors</h3>
+      <p>Sponsors search online before committing. A strong presence shows professionalism and community impact, which helps to secure funding for build season.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <span class="why-icon">🤝</span>
+      <h3>Build Community</h3>
+      <p>Engage with other FRC teams, local schools, and STEM advocates. Networking leads to mentorships and resource sharing across the ecosystem.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-3">
+      <span class="why-icon">⚙️</span>
+      <h3>Recruit Members</h3>
+      <p>Students and mentors discover teams through social media. Showcasing our culture attracts passionate engineers, programmers, and future team members.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PLATFORMS -->
+<section id="platforms">
+  <div class="section-label reveal">02 — Presence</div>
+  <h2 class="section-title reveal">Our Platforms</h2>
+  <p class="section-desc reveal">Current channels and our new LinkedIn expansion — consistent branding across every platform.</p>
+
+  <div class="platforms-grid">
+    <div class="platform-card reveal reveal-delay-1">
+      <span class="platform-icon">📸</span>
+      <div class="platform-name">Instagram</div>
+      <div class="platform-handle">@redwatchrobotics2720</div>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-value"><span class="counter" data-target="500">0</span><span>+</span></span>
+          <span class="stat-label">Followers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value"><span class="counter" data-target="105">0</span><span>+</span></span>
+          <span class="stat-label">Posts</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="platform-card reveal reveal-delay-2">
+      <span class="platform-icon">▶️</span>
+      <div class="platform-name">YouTube</div>
+      <div class="platform-handle">@redwatchrobotics2720</div>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-value"><span class="counter" data-target="45">0</span><span>+</span></span>
+          <span class="stat-label">Subscribers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value"><span class="counter" data-target="10">0</span><span>+</span></span>
+          <span class="stat-label">Videos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="platform-card reveal reveal-delay-3">
+      <span class="platform-icon">🎵</span>
+      <div class="platform-name">TikTok</div>
+      <div class="platform-handle">@redwatchrobotics2720</div>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-value"><span class="counter" data-target="600">0</span><span>+</span></span>
+          <span class="stat-label">Followers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value"><span class="counter" data-target="7000">0</span><span>+</span></span>
+          <span class="stat-label">Likes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="platform-card reveal reveal-delay-4" style="border-color: rgba(0,212,255,0.3);">
+      <div class="new-badge">NEW</div>
+      <span class="platform-icon">💼</span>
+      <div class="platform-name" style="color: var(--cyan);">LinkedIn</div>
+      <div class="platform-handle" style="color: var(--cyan);">@redwatchrobotics2720</div>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-value" style="color: var(--cyan); font-size:0.85rem;">LAUNCHING</span>
+          <span class="stat-label">B2B Presence</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LINKEDIN DEEP DIVE -->
+<section>
+  <div class="linkedin-section reveal">
+    <div class="section-label" style="color: var(--cyan);">02b — New Platform</div>
+    <h2 class="section-title" style="color: var(--cyan);">Why LinkedIn?</h2>
+    <div class="linkedin-grid">
+      <div class="li-reason">
+        <span class="li-number">01</span>
+        <div class="li-text">
+          <strong>Professional Credibility</strong>
+          <p>Pitching on LinkedIn presents a highly serious, business-minded image compared to casual platforms.</p>
+        </div>
+      </div>
+      <div class="li-reason">
+        <span class="li-number">02</span>
+        <div class="li-text">
+          <strong>Demonstrating ROI</strong>
+          <p>Sharing milestones, CAD designs, and outreach proves to sponsors that their funding directly builds the future STEM workforce.</p>
+        </div>
+      </div>
+      <div class="li-reason">
+        <span class="li-number">03</span>
+        <div class="li-text">
+          <strong>Sponsor Recognition</strong>
+          <p>Tagging sponsors gives them valuable, public, and professional acknowledgment within the business community.</p>
+        </div>
+      </div>
+      <div class="li-reason">
+        <span class="li-number">04</span>
+        <div class="li-text">
+          <strong>Alumni Network</strong>
+          <p>Easily track and maintain connections with graduated students as they enter college and industry.</p>
+        </div>
+      </div>
+      <div class="li-reason">
+        <span class="li-number">05</span>
+        <div class="li-text">
+          <strong>Targeted Mentor Recruitment</strong>
+          <p>Post specific "Mentor Wanted" listings to recruit specialized professionals like machinists or software developers.</p>
+        </div>
+      </div>
+      <div class="li-reason">
+        <span class="li-number">06</span>
+        <div class="li-text">
+          <strong>Award & Judge Appeal</strong>
+          <p>A public archive of sustainability and outreach that proves to judges we prioritize real-world career readiness.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTENT STRATEGY -->
+<section id="content">
+  <div class="section-label reveal">03 — Content</div>
+  <h2 class="section-title reveal">What to Post</h2>
+  <p class="section-desc reveal">Six content pillars that keep our audience engaged throughout the full year.</p>
+
+  <div class="content-grid">
+    <div class="content-card reveal reveal-delay-1" style="--card-color: #e8001c;">
+      <div class="content-card-header">
+        <span class="content-card-icon">🔧</span>
+        <span class="content-card-title">Build Season Updates</span>
+      </div>
+      <ul class="content-items">
+        <li>Weekly progress reels</li>
+        <li>CAD previews & reveals</li>
+        <li>Build day behind-the-scenes</li>
+        <li>Prototyping time-lapses</li>
+      </ul>
+    </div>
+
+    <div class="content-card reveal reveal-delay-2" style="--card-color: #f0b429;">
+      <div class="content-card-header">
+        <span class="content-card-icon">🏆</span>
+        <span class="content-card-title">Competition Highlights</span>
+      </div>
+      <ul class="content-items">
+        <li>Match recap videos</li>
+        <li>Alliance selections</li>
+        <li>Award announcements</li>
+        <li>Team celebrations</li>
+      </ul>
+    </div>
+
+    <div class="content-card reveal reveal-delay-3" style="--card-color: #00e676;">
+      <div class="content-card-header">
+        <span class="content-card-icon">👥</span>
+        <span class="content-card-title">Meet the Team</span>
+      </div>
+      <ul class="content-items">
+        <li>Member spotlights</li>
+        <li>Mentor features</li>
+        <li>Alumni success stories</li>
+        <li>Roles & subteams explained</li>
+      </ul>
+    </div>
+
+    <div class="content-card reveal reveal-delay-1" style="--card-color: #00d4ff;">
+      <div class="content-card-header">
+        <span class="content-card-icon">🎓</span>
+        <span class="content-card-title">STEM Education</span>
+      </div>
+      <ul class="content-items">
+        <li>Robotics tutorials</li>
+        <li>CAD tips & tricks</li>
+        <li>Coding walkthroughs</li>
+        <li>Engineer Day events</li>
+      </ul>
+    </div>
+
+    <div class="content-card reveal reveal-delay-2" style="--card-color: #b44bff;">
+      <div class="content-card-header">
+        <span class="content-card-icon">🏘️</span>
+        <span class="content-card-title">Community Outreach</span>
+      </div>
+      <ul class="content-items">
+        <li>Camp announcements</li>
+        <li>School visits</li>
+        <li>Sponsor shoutouts</li>
+        <li>Local STEM events</li>
+      </ul>
+    </div>
+
+    <div class="content-card reveal reveal-delay-3" style="--card-color: #ff6b35;">
+      <div class="content-card-header">
+        <span class="content-card-icon">⚡</span>
+        <span class="content-card-title">Off-Season Fun</span>
+      </div>
+      <ul class="content-items">
+        <li>Team challenges</li>
+        <li>Throwback posts</li>
+        <li>Bloopers & outtakes</li>
+        <li>Off-season competitions</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+  <div class="section-label reveal">04 — Cadence</div>
+  <h2 class="section-title reveal">Posting Schedule</h2>
+  <p class="section-desc reveal">Recommended frequency across all platforms, adapted for each phase of the season.</p>
+
+  <div class="schedule-wrap reveal">
+    <table>
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>🔧 Build Season</th>
+          <th>🏆 Competition</th>
+          <th>☀️ Off-Season</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>📸 Instagram</td>
+          <td><span class="freq-tag">4–5×/week</span><br>Reels + Stories</td>
+          <td><span class="freq-tag">Daily Stories</span><br>2–3× Posts/Week</td>
+          <td><span class="freq-tag">2–3×/week</span><br>Throwbacks + Fun</td>
+        </tr>
+        <tr>
+          <td>▶️ YouTube</td>
+          <td><span class="freq-tag">1×/week</span><br>Build Updates</td>
+          <td><span class="freq-tag">Post-Event</span><br>Recaps + 2×/month</td>
+          <td><span class="freq-tag">1×/month</span><br>Highlight Reels</td>
+        </tr>
+        <tr>
+          <td>🎵 TikTok</td>
+          <td><span class="freq-tag">3–4×/week</span><br>Short Reels</td>
+          <td><span class="freq-tag">2–3×/week</span><br>Match Highlights + Reactions</td>
+          <td><span class="freq-tag">2–3×/week</span><br>Fun Content</td>
+        </tr>
+        <tr>
+          <td>💼 LinkedIn</td>
+          <td><span class="freq-tag" style="color:var(--cyan);border-color:rgba(0,212,255,0.3);">1–2×/month</span><br>Milestones + Awards</td>
+          <td><span class="freq-tag" style="color:var(--cyan);border-color:rgba(0,212,255,0.3);">As needed</span><br>Competition Updates</td>
+          <td><span class="freq-tag" style="color:var(--cyan);border-color:rgba(0,212,255,0.3);">Monthly</span><br>Alumni Updates</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">RED WATCH</div>
+  <p>FRC Team 2720 · Social Media Strategy</p>
+  <p style="margin-top:0.5rem;">Vik · Erick · Afraz · Sanchita</p>
+</footer>
+
+<script>
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top = my + 'px';
+    ring.style.left = mx + 'px';
+    ring.style.top = my + 'px';
+  });
+
+  document.querySelectorAll('a, button, .why-card, .platform-card, .content-card, .li-reason').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width = '20px';
+      cursor.style.height = '20px';
+      cursor.style.background = 'rgba(232,0,28,0.6)';
+      ring.style.width = '50px';
+      ring.style.height = '50px';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width = '12px';
+      cursor.style.height = '12px';
+      cursor.style.background = 'var(--red)';
+      ring.style.width = '36px';
+      ring.style.height = '36px';
+    });
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => observer.observe(r));
+
+  // Counter animation
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    const duration = 1200;
+    const start = performance.now();
+    const update = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target);
+      if (progress < 1) requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  }
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        animateCounter(e.target);
+        counterObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(c => counterObserver.observe(c));
+</script>
+</body>
+</html>
+```
+
+Let me know if you need any other adjustments!
