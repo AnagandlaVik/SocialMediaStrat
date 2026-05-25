@@ -1,10 +1,3 @@
-**Here is your corrected HTML with both fixes applied:**
-
-### Fixes Made:
-1. Removed `#3` ("Direct Executive Access") from the LinkedIn section and renumbered the remaining items.
-2. Fixed the `+` so it appears **beside** the numbers (not below) for all follower/subscriber stats.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -392,9 +385,15 @@
     font-weight: 700;
     color: var(--text);
     line-height: 1;
+    display: inline;
+  }
+
+  .stat-number-row {
     display: flex;
     align-items: baseline;
-    gap: 3px;
+    gap: 1px;
+    line-height: 1;
+    margin-bottom: 0.2rem;
   }
 
   .stat-label {
@@ -713,6 +712,17 @@
 
   .nav-links a:hover { color: var(--red); }
 
+  /* ---- COUNTER ANIMATION ---- */
+  .counter { display: inline-block; }
+
+  /* RED LINE ACCENT */
+  .red-line {
+    width: 60px;
+    height: 3px;
+    background: var(--red);
+    margin-bottom: 2rem;
+  }
+
   @media (max-width: 600px) {
     .nav-links { display: none; }
     section { padding: 5rem 1.2rem; }
@@ -800,11 +810,11 @@
       <div class="platform-handle">@redwatchrobotics2720</div>
       <div class="stat-row">
         <div class="stat">
-          <span class="stat-value"><span class="counter" data-target="500">0</span><span>+</span></span>
+          <div class="stat-number-row"><span class="stat-value counter" data-target="500">0</span><span class="stat-value">+</span></div>
           <span class="stat-label">Followers</span>
         </div>
         <div class="stat">
-          <span class="stat-value"><span class="counter" data-target="105">0</span><span>+</span></span>
+          <div class="stat-number-row"><span class="stat-value counter" data-target="105">0</span><span class="stat-value">+</span></div>
           <span class="stat-label">Posts</span>
         </div>
       </div>
@@ -816,11 +826,11 @@
       <div class="platform-handle">@redwatchrobotics2720</div>
       <div class="stat-row">
         <div class="stat">
-          <span class="stat-value"><span class="counter" data-target="45">0</span><span>+</span></span>
+          <div class="stat-number-row"><span class="stat-value counter" data-target="45">0</span><span class="stat-value">+</span></div>
           <span class="stat-label">Subscribers</span>
         </div>
         <div class="stat">
-          <span class="stat-value"><span class="counter" data-target="10">0</span><span>+</span></span>
+          <div class="stat-number-row"><span class="stat-value counter" data-target="10">0</span><span class="stat-value">+</span></div>
           <span class="stat-label">Videos</span>
         </div>
       </div>
@@ -832,11 +842,11 @@
       <div class="platform-handle">@redwatchrobotics2720</div>
       <div class="stat-row">
         <div class="stat">
-          <span class="stat-value"><span class="counter" data-target="600">0</span><span>+</span></span>
+          <div class="stat-number-row"><span class="stat-value counter" data-target="600">0</span><span class="stat-value">+</span></div>
           <span class="stat-label">Followers</span>
         </div>
         <div class="stat">
-          <span class="stat-value"><span class="counter" data-target="7000">0</span><span>+</span></span>
+          <div class="stat-number-row"><span class="stat-value counter" data-target="7000">0</span><span class="stat-value">+</span></div>
           <span class="stat-label">Likes</span>
         </div>
       </div>
@@ -850,7 +860,7 @@
       <div class="stat-row">
         <div class="stat">
           <span class="stat-value" style="color: var(--cyan); font-size:0.85rem;">LAUNCHING</span>
-          <span class="stat-label">B2B Presence</span>
+          <span class="stat-label">Sponsor Outreach</span>
         </div>
       </div>
     </div>
@@ -1123,6 +1133,3 @@
 </script>
 </body>
 </html>
-```
-
-Let me know if you need any other adjustments!
